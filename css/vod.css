@@ -1,0 +1,73 @@
+@import "./bootstrap.min.css";
+:root {
+  --color1: #222831;
+  --color2: #393e46;
+  --color3: #00f2ff;
+  --color4: #00adb5;
+  --color5: #eeeeee;
+}
+
+body {
+  background: #222831;
+  color: #fff;
+}
+
+.container {
+  min-height: inherit;
+}
+
+.row {
+  min-height: inherit;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+
+.dark-box {
+  width: 0%;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  color: #222831;
+  transition: all 0.5s ease;
+}
+
+.dark-box.open {
+  max-width: 700px;
+  min-height: 200px;
+  width: 100%;
+}
+
+.strip {
+  min-height: 250px;
+}
+
+.strip h1 {
+  color: var(--color3);
+  letter-spacing: 0.1em;
+}
+
+header {
+  min-height: 40px;
+}
+
+.row {
+  columns: 4;
+  column-gap: 40px;
+}
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
