@@ -44,9 +44,11 @@ body {
 }
 
 .dark-box.open {
+  width: 100%;
   max-width: 700px;
   min-height: 200px;
-  width: 100%;
+  max-height: 600px;
+  overflow: auto;
 }
 
 .strip {
