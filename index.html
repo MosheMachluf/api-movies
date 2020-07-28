@@ -17,13 +17,17 @@
     <!-- Modal  -->
     <div id="id_dark" class="dark container-fluid center d-none">
       <div id="dark_box" class="dark-box text-center">
+        <button
+          onclick="onCloseDarkWindow()"
+          class="btn btn-danger position-absolute"
+          style="right: 5px; top: 5px;"
+        >
+          X
+        </button>
         <img src="" class="w-100 mb-3" />
         <h2></h2>
         <div class="views"></div>
         <p class="p-2"></p>
-        <button onclick="onCloseDarkWindow()" class="btn btn-danger mb-3">
-          Close
-        </button>
       </div>
     </div>
 
